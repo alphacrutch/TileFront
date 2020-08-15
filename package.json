@@ -1,0 +1,20 @@
+{
+    "name": "tile-front",
+    "version": "1.0.0",
+    "description": "Tiling Job Estimates",
+    "main": "index.js",
+    "scripts": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alphacrutch/TileFront.git"
+    },
+    "keywords": [
+        "TileFront",
+        "Tile",
+        "Estimates"
+    ],
+    "author": "AlphaCrutch",
+    "license": "ISC"
+}
