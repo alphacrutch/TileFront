@@ -15,6 +15,7 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="css/idex.css">
 
 </head>
 
@@ -37,9 +38,62 @@
             </nav>
         </div>
     </header>
-    <section id="intro">
-        <div id="intro-slider"></div>
-    </section>
+
+    <main>
+        <section id="intro">
+            <div id="intro-slider">SLider</div>
+        </section>
+        <section id="tutorial-section">
+            <div class="tutorial-container">
+                <p id="tutorial">How To Use</p>
+            </div>
+        </section>
+        <section id="estimater-section">
+            <div class="estimater-container">
+                <div class="estimate-form-container">
+                    <form action="index.js" method="post">
+                        <div>
+                            <label for="clientName">Client Name:</label>
+                            <input type="text" id="clientName">
+                        </div>
+                        <div>
+                            <label for="projectDescription">Any Additional Info:</label>
+                            <textarea id="projectDescription" cols="30" rows="10" placeholder="Additional Info...."></textarea>
+                        </div>
+                        <div>
+                            <label for="radio-container">Surface Type:</label>
+                            <div id="radio-container">
+                                <div>
+                                    <label for="woodsurface">Wood Surface</label>
+                                    <input type="radio" name="surfaceType" id="woodsurface">
+                                </div>
+                                <div>
+
+                                    <label for="concretep">Concrete-Plastered</label>
+                                    <input type="radio" name="surfaceType" id="concretep">
+                                </div>
+                                <div>
+                                    <label for="concretenop">Concrete-Unplastered</label>
+                                    <input type="radio" name="surfaceType" id="concretenop">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <section id="results-section">
+            <div class="results-container">
+                <div id="results">Results</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>Footer</div>
+    </footer>
 
 </body>
 

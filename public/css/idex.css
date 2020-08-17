@@ -1,1 +1,117 @@
-/* No CSS *//*# sourceMappingURL=idex.css.map */
+@media only screen and (min-width: 800px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  header {
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    border: 1px black solid;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .nav-container {
+    border: 1px black solid;
+    height: 100%;
+    width: 20vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .nav-container nav {
+    border: 1px black solid;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main {
+    height: 80vh;
+    border: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main #intro {
+    border: 1px black solid;
+  }
+  main #tutorial-section {
+    border: 1px black solid;
+  }
+  main #estimater-section {
+    width: 100%;
+    border: 1px black solid;
+  }
+  main #estimater-section .estimater-container {
+    width: 100%;
+  }
+  main #estimater-section .estimater-container .estimate-form-container {
+    width: 100%;
+    border: 1px black solid;
+  }
+  main #estimater-section .estimater-container .estimate-form-container form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #estimater-section .estimater-container .estimate-form-container form #radio-container {
+    border: 1px black solid;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=idex.css.map */
