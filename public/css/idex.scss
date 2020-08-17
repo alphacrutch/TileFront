@@ -42,31 +42,98 @@
         justify-content: space-between;
         #intro {
             border: 1px black solid;
+            width: 100%;
+            height: 25%;
         }
         #tutorial-section {
             border: 1px black solid;
+            width: 100%;
+            height: 40%;
         }
         #estimater-section {
+            height: 25%;
             width: 100%;
             border: 1px black solid;
-            .estimater-container {
+            form {
+                height: 100%;
                 width: 100%;
-                .estimate-form-container {
-                    width: 100%;
-                    border: 1px black solid;
-                    form {
-                        width: 100%;
-                        display: flex;
-                        flex-flow: row nowrap;
-                        justify-content: space-between;
-                        align-items: center;
-                        #radio-container {
-                            border: 1px black solid;
-                            height: 100%;
-                        }
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+                #projecttype-radio {
+                    height: 100%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    .labelR2 {
+                        color: red;
+                        font-size: larger;
                     }
+                    #projecttype {
+                        height: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        align-items: flex-end;
+                        justify-content: space-evenly;
+                    }
+                }
+                #dimensions-container {
+                    height: 100%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-evenly;
+                    input {
+                        width: 80px;
+                    }
+                }
+                #surfacetype-radio {
+                    height: 100%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    .labelR {
+                        color: red;
+                        font-size: larger;
+                    }
+                }
+                .extareainfo {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .clientinfo {
+                    height: 100%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    .infolets {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                    }
+                }
+                #radio-container {
+                    height: 100%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-evenly;
+                    align-items: flex-end;
                 }
             }
         }
+        #results-section {
+            height: 10%;
+            width: 100%;
+        }
+    }
+    footer {
+        height: 10vh;
+        width: 100vw;
     }
 }

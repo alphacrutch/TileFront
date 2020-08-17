@@ -14,7 +14,7 @@
     <script defer src="/__/firebase/7.18.0/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <link rel="stylesheet" href="css/idex.css">
 
 </head>
@@ -49,41 +49,95 @@
             </div>
         </section>
         <section id="estimater-section">
-            <div class="estimater-container">
-                <div class="estimate-form-container">
-                    <form action="index.js" method="post">
+            <form action="#" id="projForm" method="POST">
+                <div class="clientinfo">
+                    <div class="infolets">
+                        <label for="clientName">Name:</label>
+                        <input type="text" id="clientName">
+                    </div>
+                    <div class="infolets">
+                        <label for="clientContact">Contact Number:</label>
+                        <input type="text" id="clientContact">
+                    </div>
+                </div>
+                <div id="surfacetype-radio">
+                    <label for="radio-container" class="labelR">Surface Type:</label>
+                    <div id="radio-container">
                         <div>
-                            <label for="clientName">Client Name:</label>
-                            <input type="text" id="clientName">
+                            <label for="woodsurface">Wood Surface</label>
+                            <input type="radio" name="surfaceType" id="woodsurface">
                         </div>
                         <div>
-                            <label for="projectDescription">Any Additional Info:</label>
-                            <textarea id="projectDescription" cols="30" rows="10" placeholder="Additional Info...."></textarea>
+
+                            <label for="concretep">Concrete-Plastered</label>
+                            <input type="radio" name="surfaceType" id="concretep">
                         </div>
                         <div>
-                            <label for="radio-container">Surface Type:</label>
-                            <div id="radio-container">
-                                <div>
-                                    <label for="woodsurface">Wood Surface</label>
-                                    <input type="radio" name="surfaceType" id="woodsurface">
-                                </div>
-                                <div>
-
-                                    <label for="concretep">Concrete-Plastered</label>
-                                    <input type="radio" name="surfaceType" id="concretep">
-                                </div>
-                                <div>
-                                    <label for="concretenop">Concrete-Unplastered</label>
-                                    <input type="radio" name="surfaceType" id="concretenop">
-                                </div>
-
-                            </div>
-
+                            <label for="concretenop">Concrete-Unplastered</label>
+                            <input type="radio" name="surfaceType" id="concretenop">
                         </div>
-                    </form>
+
+                    </div>
+                </div>
+                <div id="projecttype-radio">
+                    <label for="projecttype" class="labelR2">Select Your Project:</label>
+                    <div id="projecttype">
+                        <div>
+                            <label for="indoorFloor">Floor (Indoors)</label>
+                            <input type="radio" name="projecttype" class="projClass" id="indoorFloor">
+                        </div>
+                        <div>
+                            <label for="outDoorFloor">Floor (Outdoor)</label>
+                            <input type="radio" name="projecttype" class="projClass" id="outDoorFloor">
+                        </div>
+                        <div>
+                            <label for="Bathroom">Bathroom </label>
+                            <input type="radio" name="projecttype" class="projClass" id="Bathroom">
+                        </div>
+
+                        <div>
+                            <label for="toilet">Toilet</label>
+                            <input type="radio" name="projecttype" class="projClass" id="toilet">
+                        </div>
+                        <div>
+                            <label for="bathroomToilet">Bathroom And Toilet</label>
+                            <input type="radio" name="projecttype" class="projClass" id="bathroomToilet">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dimensions-container">
+                    <div>
+                        <label for="length">Length</label>
+                        <input type="number" id="length">
+                    </div>
+                    <div>
+                        <label for="width">Width</label>
+                        <input type="number" id="width">
+                    </div>
+                    <div>
+                        <label for="faces">Faces</label>
+                        <input type="number" id="faces">
+                    </div>
+
 
                 </div>
-            </div>
+                <div class="extareainfo">
+                    <label for="projectDescription">Any Additional Info:</label>
+                    <textarea id="projectDescription" cols="25" rows="7" placeholder="Additional Info...."></textarea>
+                </div>
+                <div id="submitopts">
+                    <div>
+                        <h3>Submit Request</h3>
+                        <button id="uploadQuote">submit</button>
+                    </div>
+                    <div>
+                        <h3>Get Quote</h3>
+                        <button id="costBtn">Estimate</button>
+                    </div>
+                </div>
+            </form>
+
         </section>
         <section id="results-section">
             <div class="results-container">
